@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Dongle:wght@400&family=Hubballi&family=Hurricane&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  background: rgba(131, 123, 123, 1);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 14px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Dongle', sans-serif;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.info h2 {
+  margin: 5px 0;
+  font-family: 'Hubballi', cursive;
+  font-size: 45px;
+}
+
+.info h3 {
+  margin: 5px 0;
+  font-family: 'Hurricane', cursive;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.info h4 {
+  margin: 5px 0;
+  font-family: 'Hubballi', cursive;
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .info h2 {
+    font-size: 35px;
+  }
+
+  .info h3 {
+    font-size: 25px;
+  }
+
+  .info h4 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .profile img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .info h2 {
+    font-size: 40px;
+  }
+
+  .info h3 {
+    font-size: 28px;
+  }
+
+  .info h4 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile img {
+    width: 320px;
+    height: 320px;
+  }
+}

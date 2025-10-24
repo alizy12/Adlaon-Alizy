@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <nav>
+      <div class="logo">MY PORTFOLIO</div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="profile">
+        <img src="picture.jpg" alt="Profile Picture">
+      </div>
+      <div class="info">
+        <h2>HI I'M</h2>
+        <h3><i>ALIZY MAE ADLAON</i></h3>
+        <h4>BSINT STUDENT</h4>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
