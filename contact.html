@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <section class="container">
+    <nav>
+      <div class="logo">MY PORTFOLIO</div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <h1>Contact Me</h1>
+      <p>Let’s connect! You can reach me on any of my social platforms below.</p>
+
+      <div class="social-links">
+        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fgithub.com%2Falizy12&h=AT3AQ-GVsq1wycR7OBh_518alhfpuZh2qhYFt_sCMTeoi_MSr2G-Ce_hBwmMyVZGDTSCLhv6O5QmjtF7LdZpbWUE2IE7qBhl9Pbe_E7iT15LNoSC6bE6cZ9umYwxo6xrIjxZSxgIG-D-g0vb22y69w" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.facebook.com/share/1AXV6jo78e/" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Falizymae%3Figsh%3DMTkybGJlbnlxZG55cw%253D%253D%26utm_source%3Dig_contact_invite&h=AT3AQ-GVsq1wycR7OBh_518alhfpuZh2qhYFt_sCMTeoi_MSr2G-Ce_hBwmMyVZGDTSCLhv6O5QmjtF7LdZpbWUE2IE7qBhl9Pbe_E7iT15LNoSC6bE6cZ9umYwxo6xrIjxZSxgIG-D-g0vb22y69w" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:adlaonalizy266@gmail.com">
+          <i class="fa-solid fa-envelope"></i> Gmail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
